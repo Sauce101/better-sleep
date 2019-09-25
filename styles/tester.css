@@ -1,8 +1,11 @@
 p {
   font-size: 14px;
-  color: blue; }
+  color: black; }
 
 h2 {
-  color: blue; }
+  color: black; }
+
+body {
+  background-image: url("../img/paper01_1280.jpg"); }
 
 /*# sourceMappingURL=tester.css.map */
