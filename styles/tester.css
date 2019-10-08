@@ -1,11 +1,43 @@
 p {
-  font-size: 14px;
+  font-size: 20px;
   color: black; }
 
 h2 {
   color: black; }
 
-body {
-  background-image: url("../img/paper01_1280.jpg"); }
+li {
+  color: #990928; }
+
+/*body {
+  background-image: url('../img/paper01_1280.jpg');
+} #ebb31a*/
+#home_back {
+  background-color: #dea5f2; }
+
+#honey_back {
+  background-color: #edd04e; }
+
+#pillow_back {
+  background-color: #a1bff0; }
+
+#catsleep {
+  float: right; }
+
+#spoon {
+  float: right; }
+
+#pillow01 {
+  float: right; }
+
+img {
+  border: 0;
+  padding: 5px; }
+
+@media (min-width: 500px) {
+  ul li {
+    font-size: 30px; } }
+@media (max-width: 499px) {
+  ul li {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=tester.css.map */
