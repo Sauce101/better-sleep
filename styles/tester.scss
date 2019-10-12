@@ -1,5 +1,7 @@
+/* variables */
 $color: black;
 $lc: #990928;
+$lcw: white;
 
 p {
   font-size: 20px;
@@ -13,20 +15,33 @@ h2 {
 li {
   color: $lc;
 }
-/*body {
-  background-image: url('../img/paper01_1280.jpg');
-} #ebb31a*/
+
+/* inheritance */
+%ff {
+  font-family: arial, helvetica, sans-serif;
+}
+
+/* body id's(4) */
 #home_back {
+  @extend %ff;
   background-color: #dea5f2;
 }
 #honey_back {
+  @extend %ff;
   background-color: #edd04e;
 }
 
 #pillow_back {
+  @extend %ff;
   background-color: #a1bff0;
 }
 
+#about_back {
+  @extend %ff;
+  background-color: #05fcaa;
+}
+
+/* images */
 #catsleep {
   float: right;
 }
@@ -44,13 +59,44 @@ img {
   padding: 5px;
 }
 
+/* media */
 @media (min-width: 500px) {
-  ul li, {
+  ul li, ol li {
     font-size: 30px;
+  }
+  #ps::before {
+    content: "How Poor Sleep Quality Affects Your Health";
+  }
+  #ten::before {
+    content: "Ten Reasons Why Good Sleep Is Important"
   }
 }
 @media (max-width: 499px) {
-  ul li, {
+  ul li, ol li {
     font-size: 20px;
   }
+  #ps::before {
+    content: "Poor Sleep Quality";
+  }
+  #ten::before {
+    content: "Ten Reasons For Better Sleep"
+  }
+}
+
+/* nesting */
+div {
+  ol {
+    li {
+      color: #3d4241;
+    }
+  }
+}
+
+/* flex wrap with table */
+.aboutbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutbox > div {
+  width: 660px;
 }
