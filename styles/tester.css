@@ -49,7 +49,9 @@ img {
     content: "How Poor Sleep Quality Affects Your Health"; }
 
   #ten::before {
-    content: "Ten Reasons Why Good Sleep Is Important"; } }
+    content: "Ten Reasons Why Good Sleep Is Important";
+    color: #27165c; } }
+/* @media */
 @media (max-width: 499px) {
   ul li, ol li {
     font-size: 20px; }
@@ -58,10 +60,11 @@ img {
     content: "Poor Sleep Quality"; }
 
   #ten::before {
-    content: "Ten Reasons For Better Sleep"; } }
+    content: "Ten Reasons For Better Sleep";
+    color: #27165c; } }
 /* nesting */
-div ol li {
-  color: #3d4241; }
+div table tr, div table td {
+  color: #27165c; }
 
 /* flex wrap with table */
 .aboutbox {
@@ -69,6 +72,6 @@ div ol li {
   flex-wrap: wrap; }
 
 .aboutbox > div {
-  width: 660px; }
+  width: auto; }
 
 /*# sourceMappingURL=tester.css.map */
